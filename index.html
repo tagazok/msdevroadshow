@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <link href="app.css" rel="stylesheet">
+    <title>MS Dev RoadShow </title>
+</head>
+
+<body>
+
+    <div class="container">
+        <header>
+            <div class="main-cta">
+                <h2>MS Dev RoadShow</h2>
+                <button type="button" class="btn btn-primary">Ajouter à mon calendrier</button>
+            </div>
+            <img src="./images/header.jpg" />
+        </header>
+
+        <main>
+            <div class="row">
+                <div class="col">
+                    <h3>Une semaine pleine de tech, de code et de fun</h3>
+                    <p>
+                        Developer Digital Meetup Tour is back Canada! Join us on this one-of-a-kind journey as we bring
+                        meetup events straight to your home. Covering topics such as transforming through InnerSource,
+                        the
+                        media and data science revolution, and exploring the power in Power Apps and Azure Functions,
+                        these
+                        sessions were made to take your skills to the next level.
+                    </p>
+                    <div class="actions">
+                        <a class="btn btn-primary" href="#concours">Gagnez des cadeaux !</a>
+                    </div>
+                </div>
+                <div class="col">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/O6BZu9O4RDU" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+                </div>
+            </div>
+            <div class="row">
+                <ul class="nav nav-tabs nav-justified" id="myTab" role="agenda">
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link active" id="lundi-tab" data-bs-toggle="tab" data-bs-target="#lundi"
+                            type="button" role="tab" aria-controls="lundi" aria-selected="true">Lundi</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="lardu-tab" data-bs-toggle="tab" data-bs-target="#mardi"
+                            type="button" role="tab" aria-controls="mardi" aria-selected="false">Mardi</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="mercredi-tab" data-bs-toggle="tab" data-bs-target="#mercredi"
+                            type="button" role="tab" aria-controls="mercredi" aria-selected="false">Mercredi</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="jeudi-tab" data-bs-toggle="tab" data-bs-target="#jeudi"
+                            type="button" role="tab" aria-controls="jeudi" aria-selected="false">Jeudi</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="vendredi-tab" data-bs-toggle="tab" data-bs-target="#vendredi"
+                            type="button" role="tab" aria-controls="vendredi" aria-selected="false">Vendredi</button>
+                    </li>
+                </ul>
+                <div class="tab-content" id="myTabContent">
+                    <div class="tab-pane fade show active" id="lundi" role="tabpanel" aria-labelledby="lundi-tab">
+                        <div class="row cards">
+                            <div>
+                                <div class="card" style="width: 18rem;">
+                                    <img src="./images/tartineettech/flutter.jpg" class="card-img-top"
+                                        alt="Tartine & Tech Flutter">
+                                    <div class="card-body">
+                                        <div class="card-title">
+                                            <div class="title">Tartine & Tech</div>
+                                            <div class="time">
+                                                10h00 - 10h15
+                                            </div>
+                                        </div>
+                                        <div class="card-text">
+                                            <p>Flutter, le framework qui monte qui monte</p>
+                                            <div class="speaker padding-bottom-7px">
+                                                <img class="avatar" src="./images/speakers/elaine.jpg" />
+                                                Elaine Dias Batista
+                                            </div>
+                                            <div class="speaker">
+                                                <img class="avatar" src="./images/speakers/olivierl.png" />
+                                                Olivier Leplus
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- <div class="footer">
+                                        <button type="button" class="btn btn-success">Replay</button>
+                                    </div> -->
+                                </div>
+                            </div>
+                            <div>
+                                <div class="card" style="width: 18rem;">
+                                    <img src="./images/brunch/unitee.jpg" class="card-img-top" alt="">
+                                    <div class="card-body">
+                                        <div class="card-title">
+                                            <div class="title">Startup Brunch</div>
+                                            <div class="time">
+                                                11h00 - 11h30
+                                            </div>
+                                        </div>
+                                        <div class="card-text">
+                                            <p>Unitee, le startup studio Reinnais</p>
+                                            <div class="speaker padding-bottom-7px">
+                                                <img class="avatar" src="./images/speakers/nicolasl.jpg" />
+                                                Nicolas Letullier
+                                            </div>
+                                            <div class="speaker">
+                                                <img class="avatar" src="./images/speakers/christopherm.jpg" />
+                                                Christopher Maneu
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- <div class="footer">
+                                        <button type="button" class="btn btn-success">Replay</button>
+                                    </div> -->
+                                </div>
+                            </div>
+                            <div>
+                                <div class="card" style="width: 18rem;">
+                                    <img src="./images/tartineettech/flutter.jpg" class="card-img-top" alt="">
+                                    <div class="card-body">
+                                        <div class="card-title">
+                                            <div class="title">Geek Cooking Class</div>
+                                            <div class="time">
+                                                12h00 - 12h45
+                                            </div>
+                                        </div>
+                                        <div class="card-text">
+                                            <p>On prépare la Bierraubeurre de Harry Potter</p>
+                                            <div class="speaker padding-bottom-7px">
+                                                <img class="avatar lot" src="./images/speakers/avatar.png" />
+                                                TBD
+                                            </div>
+                                            <div class="speaker">
+                                                <img class="avatar lot" src="./images/speakers/avatar.png" />
+                                                TBD
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="card" style="width: 18rem;">
+                                    <img src="./images/future/msn.jpg" class="card-img-top" alt="">
+                                    <div class="card-body">
+                                        <div class="card-title">
+                                            <div class="title">Back to the future</div>
+                                            <div class="time">
+                                                13h00 - 13h30
+                                            </div>
+                                        </div>
+                                        <div class="card-text">
+                                            <p>On revient sur MSN Messenger !</p>
+                                            <div class="speaker padding-bottom-7px">
+                                                <img class="avatar lot" src="./images/speakers/avatar.png" />
+                                                TBD
+                                            </div>
+                                            <div class="speaker padding-bottom-7px">
+                                                <img class="avatar lot" src="./images/speakers/avatar.png" />
+                                                TBD
+                                            </div>
+                                            <div class="speaker">
+                                                <img class="avatar lot" src="./images/speakers/avatar.png" />
+                                                TBD
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="card" style="width: 18rem;">
+                                    <img src="./images/chris/lundi.jpg" class="card-img-top" alt="">
+                                    <div class="card-body">
+                                        <div class="card-title">
+                                            <div class="title">Learn with Chris</div>
+                                            <div class="time">
+                                                14h00 - 14h30
+                                            </div>
+                                        </div>
+                                        <div class="card-text">
+                                            <p>Créer des workflows d'intégration continue avec GitHub Actions – Partie
+                                                1/2
+                                            </p>
+                                            <div class="speaker">
+                                                <img class="avatar" src="./images/speakers/christopherm.jpg" />
+                                                Christopher Maneu
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="card" style="width: 18rem;">
+                                    <img src="./images/back/summer.png" class="card-img-top" alt="">
+                                    <div class="card-body">
+                                        <div class="card-title">
+                                            <div class="title">Retour sur le roadshow</div>
+                                            <div class="time">
+                                                17h00 - 17h30
+                                            </div>
+                                        </div>
+                                        <div class="card-text">
+                                            <p>Retour sur le MSDevRoadShow Summer 2019</p>
+                                            
+                                            <div class="speaker padding-bottom-7px">
+                                                <img class="avatar lot" src="./images/speakers/avatar.png" />
+                                                TBD
+                                            </div>
+                                            
+                                            <div class="speaker padding-bottom-7px">
+                                                <img class="avatar lot" src="./images/speakers/avatar.png" />
+                                                TBD
+                                            </div>
+                                            
+                                            <div class="speaker padding-bottom-7px">
+                                                <img class="avatar lot" src="./images/speakers/avatar.png" />
+                                                TBD
+                                            </div>
+                                            
+                                            <div class="speaker">
+                                                <img class="avatar lot" src="./images/speakers/avatar.png" />
+                                                TBD
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="card" style="width: 18rem;">
+                                    <img src="./images/meetups/speaker.jpg" class="card-img-top" alt="">
+                                    <div class="card-body">
+                                        <div class="card-title">
+                                            <div class="title">Meetup</div>
+                                            <div class="time">
+                                                18h30 - 20h00
+                                            </div>
+                                        </div>
+                                        <div class="card-text">
+                                            <p>Devenez un héros des GitHub Actions</p>
+                                            <div class="speaker padding-bottom-7px">
+                                                <img class="avatar" src="./images/speakers/yohan.jpg" />
+                                                Yohan Lasorsa
+                                            </div>
+                                            <p>Ombromanie: Storytelling with Machine-Learning Infused Hand Shadows</p>
+                                            <div class="speaker padding-bottom-7px">
+                                                <img class="avatar" src="./images/speakers/jen.jpg" />
+                                                Jen Looper
+                                            </div>
+                                            <p>Azure AutoML</p>
+                                            <div class="speaker">
+                                                <img class="avatar" src="./images/speakers/nick.jpg" />
+                                                Nick Trogh
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card-footer">
+                                        Inscriptions <a href=" https://aka.ms/msdevroadshow-lille" target="_blank">MUG Lille</a> ou <a href=" https://aka.ms/msdevroadshow-mons" target="_blank">MIC Mons</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="mardi" role="tabpanel" aria-labelledby="mardi-tab">aaa</div>
+                    <div class="tab-pane fade" id="mercredi" role="tabpanel" aria-labelledby="mercredi-tab">bbb</div>
+                    <div class="tab-pane fade" id="jeudi" role="tabpanel" aria-labelledby="jeudi-tab">bbb</div>
+                    <div class="tab-pane fade" id="vendredi" role="tabpanel" aria-labelledby="vendredi-tab">bbb</div>
+                </div>
+            </div>
+            <center style="padding-top: 4em;">
+                <h1>Concours</h1>
+                <h6>Participez aux différents concours et gagner des lots</h6>
+            </center>
+            <div class="row" id="concours">
+                <div class="col">
+                    <div class="card">
+                        <img src="./images/concours/csc.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Cloud Skills Challenge</h5>
+                            <p class="card-text">
+                                Complétez des modules Microsoft Learn et accumulez des points !
+                            </p>
+                            <div class="speaker padding-bottom-7px">
+                                <img class="avatar lot" src="./images/lots/pi400.png" />
+                                5 Raspberry Pi 400
+                            </div>
+                            <div class="speaker padding-bottom-7px">
+                                <img class="avatar lot" src="./images/lots/headphone.png" />
+                                5 Surface Headphones 2
+                            </div>
+                            <a href="#" class="btn btn-primary">Participer</a>
+                            <div class="reglement">Consulter le règlement <a href="#">ici</a></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card">
+                        <img src="./images/concours/twitter.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Concours Twitter</h5>
+                            <p class="card-text">
+                                Twitter votre setup de travail avec le hashtag #MSDevRoadShow et suivez @msdev_fr
+                            </p>
+                            <div class="speaker padding-bottom-7px">
+                                <img class="avatar lot" src="./images/lots/tshirt.png" />
+                                5 T-shirt MSDevRoadShow
+                            </div>
+                            <div class="speaker padding-bottom-7px">
+                                <img class="avatar lot" src="./images/lots/stickers.jpg" />
+                                5 enveloppes de Stickers
+                            </div>
+                            <a href="https://twitter.com/msdev_fr" class="btn btn-primary">Aller sur Twitter</a>
+                            <div class="reglement">Consulter le règlement <a href="#">ici</a></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card">
+                        <img src="./images/concours/meetup.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Tirages au sort Meetups</h5>
+                            <p class="card-text">Assistez aux meetups pour participer au tirage au sort !</p>
+                            <div class="speaker padding-bottom-7px">
+                                <img class="avatar lot" src="./images/lots/pi400.png" />
+                                4 Raspberry Pi 400
+                            </div>
+                            <div class="reglement">Consulter le règlement <a href="#">ici</a></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>
