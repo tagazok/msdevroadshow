@@ -17,7 +17,17 @@
         <header>
             <div class="main-cta">
                 <h2>MS Dev RoadShow</h2>
-                <button type="button" class="btn btn-primary">Ajouter à mon calendrier</button>
+                <!-- <button type="button" class="btn btn-primary"></button> -->
+                <div class="dropdown">
+                    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                        Ajouter à mon calendrier
+                    </button>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                      <li><a class="dropdown-item" href="#">Google Calendar</a></li>
+                      <li><a class="dropdown-item" href="#">Microsoft Outlook</a></li>
+                    </ul>
+                  </div>
+
             </div>
             <img src="./images/header.jpg" />
         </header>
@@ -53,7 +63,7 @@
                 <ul class="nav nav-tabs nav-justified" id="myTab" role="agenda">
                     <li class="nav-item" role="presentation">
                         <button class="nav-link active" id="lundi-tab" data-bs-toggle="tab" data-bs-target="#lundi"
-                            type="button" role="tab" aria-controls="lundi" aria-selected="true">Lundi</button>
+                            type="button" role="tab" aria-controls="lundi" aria-selected="false">Lundi</button>
                     </li>
                     <li class="nav-item" role="presentation">
                         <button class="nav-link" id="lardu-tab" data-bs-toggle="tab" data-bs-target="#mardi"
@@ -69,11 +79,11 @@
                     </li>
                     <li class="nav-item" role="presentation">
                         <button class="nav-link" id="vendredi-tab" data-bs-toggle="tab" data-bs-target="#vendredi"
-                            type="button" role="tab" aria-controls="vendredi" aria-selected="false">Vendredi</button>
+                            type="button" role="tab" aria-controls="vendredi" aria-selected="true">Vendredi</button>
                     </li>
                 </ul>
                 <div class="tab-content" id="myTabContent">
-                    <div class="tab-pane fade show active" id="lundi" role="tabpanel" aria-labelledby="lundi-tab">
+                    <div class="tab-pane fade" id="lundi" role="tabpanel" aria-labelledby="lundi-tab">
                         <div class="row cards">
                             <div>
                                 <div class="card" style="width: 18rem;">
@@ -132,7 +142,7 @@
                             </div>
                             <div>
                                 <div class="card" style="width: 18rem;">
-                                    <img src="./images/tartineettech/flutter.jpg" class="card-img-top" alt="">
+                                    <img src="./images/tbd.png" class="card-img-top" alt="">
                                     <div class="card-body">
                                         <div class="card-title">
                                             <div class="title">Geek Cooking Class</div>
@@ -184,7 +194,7 @@
                             </div>
                             <div>
                                 <div class="card" style="width: 18rem;">
-                                    <img src="./images/chris/lundi.jpg" class="card-img-top" alt="">
+                                    <img src="./images/chris/lundi.png" class="card-img-top" alt="">
                                     <div class="card-body">
                                         <div class="card-title">
                                             <div class="title">Learn with Chris</div>
@@ -275,10 +285,766 @@
                             </div>
                         </div>
                     </div>
-                    <div class="tab-pane fade" id="mardi" role="tabpanel" aria-labelledby="mardi-tab">aaa</div>
-                    <div class="tab-pane fade" id="mercredi" role="tabpanel" aria-labelledby="mercredi-tab">bbb</div>
-                    <div class="tab-pane fade" id="jeudi" role="tabpanel" aria-labelledby="jeudi-tab">bbb</div>
-                    <div class="tab-pane fade" id="vendredi" role="tabpanel" aria-labelledby="vendredi-tab">bbb</div>
+                    <div class="tab-pane fade" id="mardi" role="tabpanel" aria-labelledby="mardi-tab">
+                        <div class="row cards">
+                            <div>
+                                <div class="card" style="width: 18rem;">
+                                    <img src="./images/tartineettech/quantum.jpg" class="card-img-top"
+                                        alt="Tartine & Tech Flutter">
+                                    <div class="card-body">
+                                        <div class="card-title">
+                                            <div class="title">Tartine & Tech</div>
+                                            <div class="time">
+                                                10h00 - 10h15
+                                            </div>
+                                        </div>
+                                        <div class="card-text">
+                                            <p>Introduction à l'informatique quantique</p>
+                                            <div class="speaker padding-bottom-7px">
+                                                <img class="avatar" src="./images/speakers/vivien.jpg" />
+                                                Vivien Londe
+                                            </div>
+                                            <div class="speaker">
+                                                <img class="avatar" src="./images/speakers/olivierl.png" />
+                                                Olivier Leplus
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- <div class="footer">
+                                        <button type="button" class="btn btn-success">Replay</button>
+                                    </div> -->
+                                </div>
+                            </div>
+                            <div>
+                                <div class="card" style="width: 18rem;">
+                                    <img src="./images/tbd.png" class="card-img-top" alt="">
+                                    <div class="card-body">
+                                        <div class="card-title">
+                                            <div class="title">Startup Brunch</div>
+                                            <div class="time">
+                                                11h00 - 11h30
+                                            </div>
+                                        </div>
+                                        <div class="card-text">
+                                            <p>TBD</p>
+                                            <div class="speaker padding-bottom-7px">
+                                                <img class="avatar" src="./images/speakers/avatar.png" />
+                                                TBD
+                                            </div>
+                                            <div class="speaker">
+                                                <img class="avatar" src="./images/speakers/christopherm.jpg" />
+                                                Christopher Maneu
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- <div class="footer">
+                                        <button type="button" class="btn btn-success">Replay</button>
+                                    </div> -->
+                                </div>
+                            </div>
+                            <div>
+                                <div class="card" style="width: 18rem;">
+                                    <img src="./images/tbd.png" class="card-img-top" alt="">
+                                    <div class="card-body">
+                                        <div class="card-title">
+                                            <div class="title">Geek Cooking Class</div>
+                                            <div class="time">
+                                                12h00 - 12h45
+                                            </div>
+                                        </div>
+                                        <div class="card-text">
+                                            <p>TBD</p>
+                                            <div class="speaker padding-bottom-7px">
+                                                <img class="avatar lot" src="./images/speakers/avatar.png" />
+                                                TBD
+                                            </div>
+                                            <div class="speaker">
+                                                <img class="avatar lot" src="./images/speakers/avatar.png" />
+                                                TBD
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="card" style="width: 18rem;">
+                                    <img src="./images/future/xp.jpg" class="card-img-top" alt="">
+                                    <div class="card-body">
+                                        <div class="card-title">
+                                            <div class="title">Back to the future</div>
+                                            <div class="time">
+                                                13h00 - 13h30
+                                            </div>
+                                        </div>
+                                        <div class="card-text">
+                                            <p>Souvenez-vous de la révolution Windows XP</p>
+                                            <div class="speaker padding-bottom-7px">
+                                                <img class="avatar lot" src="./images/speakers/avatar.png" />
+                                                TBD
+                                            </div>
+                                            <div class="speaker padding-bottom-7px">
+                                                <img class="avatar lot" src="./images/speakers/avatar.png" />
+                                                TBD
+                                            </div>
+                                            <div class="speaker">
+                                                <img class="avatar lot" src="./images/speakers/avatar.png" />
+                                                TBD
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="card" style="width: 18rem;">
+                                    <img src="./images/chris/mardi.png" class="card-img-top" alt="">
+                                    <div class="card-body">
+                                        <div class="card-title">
+                                            <div class="title">Learn with Chris</div>
+                                            <div class="time">
+                                                14h00 - 14h30
+                                            </div>
+                                        </div>
+                                        <div class="card-text">
+                                            <p>Créer des workflows d'intégration continue avec GitHub Actions – Partie
+                                                2/2
+                                            </p>
+                                            <div class="speaker">
+                                                <img class="avatar" src="./images/speakers/christopherm.jpg" />
+                                                Christopher Maneu
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="card" style="width: 18rem;">
+                                    <img src="./images/back/fall.png" class="card-img-top" alt="">
+                                    <div class="card-body">
+                                        <div class="card-title">
+                                            <div class="title">Retour sur le roadshow</div>
+                                            <div class="time">
+                                                17h00 - 17h30
+                                            </div>
+                                        </div>
+                                        <div class="card-text">
+                                            <p>Retour sur le MSDevRoadShow Fall 2019</p>
+                                            
+                                            <div class="speaker padding-bottom-7px">
+                                                <img class="avatar lot" src="./images/speakers/avatar.png" />
+                                                TBD
+                                            </div>
+                                            
+                                            <div class="speaker padding-bottom-7px">
+                                                <img class="avatar lot" src="./images/speakers/avatar.png" />
+                                                TBD
+                                            </div>
+                                            
+                                            <div class="speaker padding-bottom-7px">
+                                                <img class="avatar lot" src="./images/speakers/avatar.png" />
+                                                TBD
+                                            </div>
+                                            
+                                            <div class="speaker">
+                                                <img class="avatar lot" src="./images/speakers/avatar.png" />
+                                                TBD
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="card" style="width: 18rem;">
+                                    <img src="./images/meetups/speaker2.jpg" class="card-img-top" alt="">
+                                    <div class="card-body">
+                                        <div class="card-title">
+                                            <div class="title">Meetup</div>
+                                            <div class="time">
+                                                18h30 - 20h00
+                                            </div>
+                                        </div>
+                                        <div class="card-text">
+                                            <p>Comment devenir un contributeur Open Source ?</p>
+                                            <div class="speaker padding-bottom-7px">
+                                                <img class="avatar" src="./images/speakers/yohan.jpg" />
+                                                Yohan Lasorsa
+                                            </div>
+                                            <p>GitHub Codespaces</p>
+                                            <div class="speaker">
+                                                <img class="avatar" src="./images/speakers/nick.jpg" />
+                                                Nick Trogh
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card-footer">
+                                        Inscriptions <a href="https://aka.ms/msdevroadshow-luxembourg" target="_blank">MUG Luxembourg</a> ou <a href="https://aka.ms/msdevroadshow-strasbourg" target="_blank">MUG Strasbourg</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="mercredi" role="tabpanel" aria-labelledby="mercredi-tab">
+                        <div class="row cards">
+                            <div>
+                                <div class="card" style="width: 18rem;">
+                                    <img src="./images/tartineettech/iot.jpg" class="card-img-top"
+                                        alt="Tartine & Tech Flutter">
+                                    <div class="card-body">
+                                        <div class="card-title">
+                                            <div class="title">Tartine & Tech</div>
+                                            <div class="time">
+                                                10h00 - 10h15
+                                            </div>
+                                        </div>
+                                        <div class="card-text">
+                                            <p>Azure IoT Central, simple comme bonjour</p>
+                                            <div class="speaker padding-bottom-7px">
+                                                <img class="avatar" src="./images/speakers/christopherm.jpg" />
+                                                Christopher Maneu
+                                            </div>
+                                            <div class="speaker">
+                                                <img class="avatar" src="./images/speakers/olivierl.png" />
+                                                Olivier Leplus
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- <div class="footer">
+                                        <button type="button" class="btn btn-success">Replay</button>
+                                    </div> -->
+                                </div>
+                            </div>
+                            <div>
+                                <div class="card" style="width: 18rem;">
+                                    <img src="./images/tbd.png" class="card-img-top" alt="">
+                                    <div class="card-body">
+                                        <div class="card-title">
+                                            <div class="title">Startup Brunch</div>
+                                            <div class="time">
+                                                11h00 - 11h30
+                                            </div>
+                                        </div>
+                                        <div class="card-text">
+                                            <p>TBD</p>
+                                            <div class="speaker padding-bottom-7px">
+                                                <img class="avatar" src="./images/speakers/avatar.png" />
+                                                TBD
+                                            </div>
+                                            <div class="speaker">
+                                                <img class="avatar" src="./images/speakers/christopherm.jpg" />
+                                                Christopher Maneu
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- <div class="footer">
+                                        <button type="button" class="btn btn-success">Replay</button>
+                                    </div> -->
+                                </div>
+                            </div>
+                            <div>
+                                <div class="card" style="width: 18rem;">
+                                    <img src="./images/tbd.png" class="card-img-top" alt="">
+                                    <div class="card-body">
+                                        <div class="card-title">
+                                            <div class="title">Geek Cooking Class</div>
+                                            <div class="time">
+                                                12h00 - 12h45
+                                            </div>
+                                        </div>
+                                        <div class="card-text">
+                                            <p>TBD</p>
+                                            <div class="speaker padding-bottom-7px">
+                                                <img class="avatar lot" src="./images/speakers/avatar.png" />
+                                                TBD
+                                            </div>
+                                            <div class="speaker">
+                                                <img class="avatar lot" src="./images/speakers/avatar.png" />
+                                                TBD
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="card" style="width: 18rem;">
+                                    <img src="./images/future/xp.jpg" class="card-img-top" alt="">
+                                    <div class="card-body">
+                                        <div class="card-title">
+                                            <div class="title">Back to the future</div>
+                                            <div class="time">
+                                                13h00 - 13h30
+                                            </div>
+                                        </div>
+                                        <div class="card-text">
+                                            <p>Microsoft FrontPage, le low/no-code il y a 25 ans</p>
+                                            <div class="speaker padding-bottom-7px">
+                                                <img class="avatar lot" src="./images/speakers/avatar.png" />
+                                                TBD
+                                            </div>
+                                            <div class="speaker padding-bottom-7px">
+                                                <img class="avatar lot" src="./images/speakers/avatar.png" />
+                                                TBD
+                                            </div>
+                                            <div class="speaker">
+                                                <img class="avatar lot" src="./images/speakers/avatar.png" />
+                                                TBD
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="card" style="width: 18rem;">
+                                    <img src="./images/chris/mercredi.png" class="card-img-top" alt="">
+                                    <div class="card-body">
+                                        <div class="card-title">
+                                            <div class="title">Learn with Chris</div>
+                                            <div class="time">
+                                                14h00 - 14h30
+                                            </div>
+                                        </div>
+                                        <div class="card-text">
+                                            <p>Publier sur GitHub Packages avec GitHub Actions
+                                            </p>
+                                            <div class="speaker">
+                                                <img class="avatar" src="./images/speakers/christopherm.jpg" />
+                                                Christopher Maneu
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="card" style="width: 18rem;">
+                                    <img src="./images/back/spring.png" class="card-img-top" alt="">
+                                    <div class="card-body">
+                                        <div class="card-title">
+                                            <div class="title">Retour sur le roadshow</div>
+                                            <div class="time">
+                                                17h00 - 17h30
+                                            </div>
+                                        </div>
+                                        <div class="card-text">
+                                            <p>Retour sur les MSDevRoadShow Spring 2019 et Fall 2020</p>
+                                            
+                                            <div class="speaker padding-bottom-7px">
+                                                <img class="avatar lot" src="./images/speakers/avatar.png" />
+                                                TBD
+                                            </div>
+                                            
+                                            <div class="speaker padding-bottom-7px">
+                                                <img class="avatar lot" src="./images/speakers/avatar.png" />
+                                                TBD
+                                            </div>
+                                            
+                                            <div class="speaker padding-bottom-7px">
+                                                <img class="avatar lot" src="./images/speakers/avatar.png" />
+                                                TBD
+                                            </div>
+                                            
+                                            <div class="speaker">
+                                                <img class="avatar lot" src="./images/speakers/avatar.png" />
+                                                TBD
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="card" style="width: 18rem;">
+                                    <img src="./images/meetups/speaker3.jpg" class="card-img-top" alt="">
+                                    <div class="card-body">
+                                        <div class="card-title">
+                                            <div class="title">Meetup</div>
+                                            <div class="time">
+                                                18h30 - 20h00
+                                            </div>
+                                        </div>
+                                        <div class="card-text">
+                                            <p>Build and deploy PyTorch models with Azure Machine Learning</p>
+                                            <div class="speaker padding-bottom-7px">
+                                                <img class="avatar" src="./images/speakers/henk.jpg" />
+                                                Henk Boelman
+                                            </div>
+                                            <p>Running Spring in a Serverless environment</p>
+                                            <div class="speaker">
+                                                <img class="avatar" src="./images/speakers/juliend.jpg" />
+                                                Julien Dubois
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card-footer">
+                                        Inscriptions <a href="​
+                                        - Running Spring in a Serverless environment par Julien Dubois​
+                                        ​
+                                        CTAs:​
+                                        https://aka.ms/msdevroadshow-nantes" target="_blank">MUG .Net Nantes</a> ou <a href="https://aka.ms/msdevroadshow-paris" target="_blank">AZUG FR</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>        
+                    <div class="tab-pane fade" id="jeudi" role="tabpanel" aria-labelledby="jeudi-tab">
+                        <div class="row cards">
+                            <div>
+                                <div class="card" style="width: 18rem;">
+                                    <img src="./images/tartineettech/bazel.jpg" class="card-img-top"
+                                        alt="Tartine & Tech Flutter">
+                                    <div class="card-body">
+                                        <div class="card-title">
+                                            <div class="title">Tartine & Tech</div>
+                                            <div class="time">
+                                                10h00 - 10h15
+                                            </div>
+                                        </div>
+                                        <div class="card-text">
+                                            <p>Bazel, le futur de l'automatisation ?</p>
+                                            <div class="speaker padding-bottom-7px">
+                                                <img class="avatar" src="./images/speakers/wassim.jpg" />
+                                                Wassim Chegham
+                                            </div>
+                                            <div class="speaker">
+                                                <img class="avatar" src="./images/speakers/olivierl.png" />
+                                                Olivier Leplus
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- <div class="footer">
+                                        <button type="button" class="btn btn-success">Replay</button>
+                                    </div> -->
+                                </div>
+                            </div>
+                            <div>
+                                <div class="card" style="width: 18rem;">
+                                    <img src="./images/tbd.png" class="card-img-top" alt="">
+                                    <div class="card-body">
+                                        <div class="card-title">
+                                            <div class="title">Startup Brunch</div>
+                                            <div class="time">
+                                                11h00 - 11h30
+                                            </div>
+                                        </div>
+                                        <div class="card-text">
+                                            <p>TBD</p>
+                                            <div class="speaker padding-bottom-7px">
+                                                <img class="avatar" src="./images/speakers/avatar.png" />
+                                                TBD
+                                            </div>
+                                            <div class="speaker">
+                                                <img class="avatar" src="./images/speakers/christopherm.jpg" />
+                                                Christopher Maneu
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- <div class="footer">
+                                        <button type="button" class="btn btn-success">Replay</button>
+                                    </div> -->
+                                </div>
+                            </div>
+                            <div>
+                                <div class="card" style="width: 18rem;">
+                                    <img src="./images/tbd.png" class="card-img-top" alt="">
+                                    <div class="card-body">
+                                        <div class="card-title">
+                                            <div class="title">Geek Cooking Class</div>
+                                            <div class="time">
+                                                12h00 - 12h45
+                                            </div>
+                                        </div>
+                                        <div class="card-text">
+                                            <p>TBD</p>
+                                            <div class="speaker padding-bottom-7px">
+                                                <img class="avatar lot" src="./images/speakers/avatar.png" />
+                                                TBD
+                                            </div>
+                                            <div class="speaker">
+                                                <img class="avatar lot" src="./images/speakers/avatar.png" />
+                                                TBD
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="card" style="width: 18rem;">
+                                    <img src="./images/tbd.png" class="card-img-top" alt="">
+                                    <div class="card-body">
+                                        <div class="card-title">
+                                            <div class="title">Back to the future</div>
+                                            <div class="time">
+                                                13h00 - 13h30
+                                            </div>
+                                        </div>
+                                        <div class="card-text">
+                                            <p>R.I.P Windows Phone, on t'aimait bien</p>
+                                            <div class="speaker padding-bottom-7px">
+                                                <img class="avatar lot" src="./images/speakers/avatar.png" />
+                                                TBD
+                                            </div>
+                                            <div class="speaker padding-bottom-7px">
+                                                <img class="avatar lot" src="./images/speakers/avatar.png" />
+                                                TBD
+                                            </div>
+                                            <div class="speaker">
+                                                <img class="avatar lot" src="./images/speakers/avatar.png" />
+                                                TBD
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="card" style="width: 18rem;">
+                                    <img src="./images/chris/jeudi.png" class="card-img-top" alt="">
+                                    <div class="card-body">
+                                        <div class="card-title">
+                                            <div class="title">Learn with Chris</div>
+                                            <div class="time">
+                                                14h00 - 14h30
+                                            </div>
+                                        </div>
+                                        <div class="card-text">
+                                            <p>Créer une app web avec Blazor WebAssembly et VSCode
+                                            </p>
+                                            <div class="speaker">
+                                                <img class="avatar" src="./images/speakers/christopherm.jpg" />
+                                                Christopher Maneu
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="card" style="width: 18rem;">
+                                    <img src="./images/back/fall.png" class="card-img-top" alt="">
+                                    <div class="card-body">
+                                        <div class="card-title">
+                                            <div class="title">Retour sur le roadshow</div>
+                                            <div class="time">
+                                                17h00 - 17h30
+                                            </div>
+                                        </div>
+                                        <div class="card-text">
+                                            <p>Retour sur les MSDevRoadShow Fall 2019</p>
+                                            
+                                            <div class="speaker padding-bottom-7px">
+                                                <img class="avatar lot" src="./images/speakers/avatar.png" />
+                                                TBD
+                                            </div>
+                                            
+                                            <div class="speaker padding-bottom-7px">
+                                                <img class="avatar lot" src="./images/speakers/avatar.png" />
+                                                TBD
+                                            </div>
+                                            
+                                            <div class="speaker padding-bottom-7px">
+                                                <img class="avatar lot" src="./images/speakers/avatar.png" />
+                                                TBD
+                                            </div>
+                                            
+                                            <div class="speaker">
+                                                <img class="avatar lot" src="./images/speakers/avatar.png" />
+                                                TBD
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="card" style="width: 18rem;">
+                                    <img src="./images/meetups/speaker.jpg" class="card-img-top" alt="">
+                                    <div class="card-body">
+                                        <div class="card-title">
+                                            <div class="title">Meetup</div>
+                                            <div class="time">
+                                                18h30 - 20h00
+                                            </div>
+                                        </div>
+                                        <div class="card-text">
+                                            <p>Build and deploy PyTorch models with Azure Machine Learning</p>
+                                            <div class="speaker padding-bottom-7px">
+                                                <img class="avatar" src="./images/speakers/henk.jpg" />
+                                                Henk Boelman
+                                            </div>
+                                            <p>Running Spring in a Serverless environment</p>
+                                            <div class="speaker">
+                                                <img class="avatar" src="./images/speakers/juliend.jpg" />
+                                                Julien Dubois
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card-footer">
+                                        Inscriptions <a href="​
+                                        - Running Spring in a Serverless environment par Julien Dubois​
+                                        ​
+                                        CTAs:​
+                                        https://aka.ms/msdevroadshow-nantes" target="_blank">MUG .Net Nantes</a> ou <a href="https://aka.ms/msdevroadshow-paris" target="_blank">AZUG FR</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade show active" id="vendredi" role="tabpanel" aria-labelledby="vendredi-tab">
+                        <div class="row cards">
+                            <div>
+                                <div class="card" style="width: 18rem;">
+                                    <img src="./images/tbd.png" class="card-img-top"
+                                        alt="Développement web sur Surface Duo & mode">
+                                    <div class="card-body">
+                                        <div class="card-title">
+                                            <div class="title">Tartine & Tech</div>
+                                            <div class="time">
+                                                10h00 - 10h15
+                                            </div>
+                                        </div>
+                                        <div class="card-text">
+                                            <p>Bazel, le futur de l'automatisation ?</p>
+                                            <div class="speaker padding-bottom-7px">
+                                                <img class="avatar" src="./images/speakers/davidr.jpg" />
+                                                David Rousset
+                                            </div>
+                                            <div class="speaker">
+                                                <img class="avatar" src="./images/speakers/olivierl.png" />
+                                                Olivier Leplus
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- <div class="footer">
+                                        <button type="button" class="btn btn-success">Replay</button>
+                                    </div> -->
+                                </div>
+                            </div>
+                            <div>
+                                <div class="card" style="width: 18rem;">
+                                    <img src="./images/tbd.png" class="card-img-top" alt="">
+                                    <div class="card-body">
+                                        <div class="card-title">
+                                            <div class="title">Startup Brunch</div>
+                                            <div class="time">
+                                                11h00 - 11h30
+                                            </div>
+                                        </div>
+                                        <div class="card-text">
+                                            <p>TBD</p>
+                                            <div class="speaker padding-bottom-7px">
+                                                <img class="avatar" src="./images/speakers/avatar.png" />
+                                                TBD
+                                            </div>
+                                            <div class="speaker">
+                                                <img class="avatar" src="./images/speakers/christopherm.jpg" />
+                                                Christopher Maneu
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- <div class="footer">
+                                        <button type="button" class="btn btn-success">Replay</button>
+                                    </div> -->
+                                </div>
+                            </div>
+                            <div>
+                                <div class="card" style="width: 18rem;">
+                                    <img src="./images/tbd.png" class="card-img-top" alt="">
+                                    <div class="card-body">
+                                        <div class="card-title">
+                                            <div class="title">Geek Cooking Class</div>
+                                            <div class="time">
+                                                12h00 - 12h45
+                                            </div>
+                                        </div>
+                                        <div class="card-text">
+                                            <p>TBD</p>
+                                            <div class="speaker padding-bottom-7px">
+                                                <img class="avatar lot" src="./images/speakers/avatar.png" />
+                                                TBD
+                                            </div>
+                                            <div class="speaker">
+                                                <img class="avatar lot" src="./images/speakers/avatar.png" />
+                                                TBD
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="card" style="width: 18rem;">
+                                    <img src="./images/future/aoe2.jpg" class="card-img-top" alt="">
+                                    <div class="card-body">
+                                        <div class="card-title">
+                                            <div class="title">Back to the future</div>
+                                            <div class="time">
+                                                13h00 - 13h30
+                                            </div>
+                                        </div>
+                                        <div class="card-text">
+                                            <p>Age of Empire</p>
+                                            <div class="speaker padding-bottom-7px">
+                                                <img class="avatar lot" src="./images/speakers/avatar.png" />
+                                                TBD
+                                            </div>
+                                            <div class="speaker padding-bottom-7px">
+                                                <img class="avatar lot" src="./images/speakers/avatar.png" />
+                                                TBD
+                                            </div>
+                                            <div class="speaker">
+                                                <img class="avatar lot" src="./images/speakers/avatar.png" />
+                                                TBD
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="card" style="width: 18rem;">
+                                    <img src="./images/chris/vendredi.png" class="card-img-top" alt="">
+                                    <div class="card-body">
+                                        <div class="card-title">
+                                            <div class="title">Learn with Chris</div>
+                                            <div class="time">
+                                                14h00 - 14h30
+                                            </div>
+                                        </div>
+                                        <div class="card-text">
+                                            <p>Publier une app Blazor WebAssembly et une API .Net avec Azure Static Web Apps
+                                            </p>
+                                            <div class="speaker">
+                                                <img class="avatar" src="./images/speakers/christopherm.jpg" />
+                                                Christopher Maneu
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="card" style="width: 18rem;">
+                                    <img src="./images/back/fall.png" class="card-img-top" alt="">
+                                    <div class="card-body">
+                                        <div class="card-title">
+                                            <div class="title">Un dernier mot</div>
+                                            <div class="time">
+                                                17h00 - 17h30
+                                            </div>
+                                        </div>
+                                        <div class="card-text">
+                                            <p>Le MSDevRoadShow c'est terminé</p>
+                                            
+                                            <div class="speaker padding-bottom-7px">
+                                                <img class="avatar lot" src="./images/speakers/olivierl.png" />
+                                                Olivier Leplus
+                                            </div>
+                                            
+                                            <div class="speaker padding-bottom-7px">
+                                                <img class="avatar lot" src="./images/speakers/alexia.jpg" />
+                                                Alexia Montens
+                                            </div>
+                                            
+                                            <div class="speaker padding-bottom-7px">
+                                                <img class="avatar lot" src="./images/speakers/maud.jpg" />
+                                                Maud Levy
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
             <center style="padding-top: 4em;">
