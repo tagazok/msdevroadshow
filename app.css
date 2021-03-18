@@ -78,8 +78,9 @@ header .main-cta h2 {
 }
 
 .cards {
-    
+    justify-content: center;
 }
+
 .cards.row > * {
     width: auto;
 }
